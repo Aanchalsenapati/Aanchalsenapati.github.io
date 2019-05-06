@@ -1,7 +1,8 @@
+
 body {
   font-size: 16px;
   color: #fff;
-  background-color: #DAF7A6;
+  background-color: white;
   font-family: 'Oxygen', sans-serif;
 }
 
@@ -11,28 +12,79 @@ body {
   border-radius: 0;
   border: 0;
 }
+.navbar{
+border:1px solid #FFC300;
+}
 
-/* Restaurant name */
 .navbar-brand {
   padding-top: 25px;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
-.navbar-brand h1 {
-  font-family: 'Lora', serif;
+
+.navbar-brand h1 { 
+  /* FOOD, LLC */
+  font-family: 'Georgia';
   color: #FFC300;
   font-size: 1.5em;
-  text-transform: uppercase;
   font-weight: bold;
-  text-shadow: 1px 1px 1px #222;
   margin-top: 0;
   margin-bottom: 0;
+  line-height: .75
 }
-.navbar-brand a:hover {
+
+.navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
 }
-.navbar-brand p { /* cert */
-  color: #fcfcfc;
-  text-transform: uppercase;
-  font-size: .7em;
+
+.navbar-toggle .icon-bar{
+clear: both;
+display: block;
+width: 25px;
+height: 5px;
+background-color: #FFC300;
+border-radius: 2px;
+margin-bottom: 5px;
+}
+
+button {
+background-color: #6055B9;
+padding-top: 5px;
+border: 2px solid #FFC300;
+border-radius: 2px;
+}
+
+#nav-list {
   margin-top: 15px;
 }
 
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+#main-content {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.text-center {
+  font-family: 'Optima', sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+.navbar-collapse li{
+  border-bottom: 1px solid #FFC300;
+  color: #FFC300;
+  text-align: center;
+}
+
+.bg-color {
+  height: 1000px;
+  background-color: #DAF7A6;
+}
+/********** Medium devices only **********/
+@media (min-width: 760px) and (max-width: 1199px) 
