@@ -22,3 +22,15 @@ function speak(name) {
 // See Lecture 52, part 2
 // (Note, Step 6 will be done in the SpeakGoodBye.js file.)
 // xxxx.xxxx = helloSpeaker;
+
+(function (window) {
+  var helloSpeaker = {};
+  helloSpeaker.name = "John";
+  var speakWord = "Hello ";
+  helloSpeaker.speak = function () {
+    console.log(speakWord + helloSpeaker.name + name);
+  }
+
+  window.helloSpeaker = helloSpeaker;
+
+})(window);
