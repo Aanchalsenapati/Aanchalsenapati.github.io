@@ -25,10 +25,10 @@ function speak(name) {
 
 (function (window) {
   var helloSpeaker = {};
-  helloSpeaker.name = "John";
+  helloSpeaker.names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
   var speakWord = "Hello ";
   helloSpeaker.speak = function () {
-    console.log(speakWord + helloSpeaker.name + name);
+    console.log(speakWord + helloSpeaker.names + name);
   }
 
   window.helloSpeaker = helloSpeaker;
