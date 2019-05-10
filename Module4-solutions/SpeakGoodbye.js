@@ -23,3 +23,16 @@ function speak(name) {
 // STEP 9: Expose the 'byeSpeaker' object to the global scope. Name it
 // 'byeSpeaker' on the global scope as well.
 // xxxx.xxxx = byeSpeaker;
+
+
+(function (window) {
+  var byeSpeaker = {};
+  byeSpeaker.names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+  var speakWord = "Good Bye";
+  byeSpeaker.speak = function () {
+    console.log(speakWord + byeSpeaker.name + name);
+  }
+
+  window.byeSpeaker = byeSpeaker;
+
+})(window);
