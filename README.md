@@ -1,1 +1,1 @@
-# coursera-css-html.github.io
+# HTML-CSS-JavaScript.github.io projects and pages
